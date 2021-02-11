@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #444242;
+}
+
+.app-header {
+  background-color: #2cb4ff;
+  overflow: visible;
+  width: 100%;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 3px 10px 0px #000000;
+}
+.app-logo{
+  width: 200px;
+  height: 200px;
+}
+.app-header > h1{
+  color: #ffff2d;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 60px;
+  text-shadow: 4px 4px #7c7c10;
+  
+}
+
+.messages-list {
+  padding: 20px 0;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.messages-message {
+  display: flex;
+  margin-top: 10px;
+}
+
+.messages-message.currentMember {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.message-content {
+  display: inline-block;
+}
+
+.currentMember > .message-content {
+  align-items: flex-end;
+}
+
+.messages-message > .avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px -10px;
+  
+}
+
+.message-content > .username {
+  display: block;
+  color: whitesmoke;
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+.message-content > .text {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0;
+  border-radius: 12px;
+  background-color: #2cb4ff;
+  color: black;
+  display: inline-block;
+  box-shadow: 0px 3px 10px 0px #000000;
+}
+
+.currentMember > .message-content .text {
+  background-color: #ffff2d;
+  color: black;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ffff2d;
+  flex-grow: 1;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #2cb4ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+button:hover {
+  color: black;
+  background-color:  #ffff2d;
+  cursor: pointer;
+ 
+}
